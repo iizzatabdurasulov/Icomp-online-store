@@ -1,0 +1,112 @@
+.basketItem {
+  padding: 24px;
+
+  h4 {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #060f42;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 24px;
+  }
+
+  .basketBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    margin-top: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+
+    .infoProduct {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      h2 {
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: #333;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 0px;
+      margin: 0px;
+
+      span {
+        font-family: Lato;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        color: #333333;
+        padding: 8px 16px;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      li {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #01579b;
+        cursor: pointer;
+        background-color: #e5e5e580;
+      }
+    }
+
+    h3 {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #333333;
+      text-align: center;
+
+      span {
+        display: block;
+      }
+    }
+
+    button {
+      font-size: 25px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: crimson;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .basketItem {
+    .basketBody {
+      display: flex;
+      padding: 0px;
+      flex-wrap: wrap;
+
+      button {
+        order: 2 !important;
+      }
+    }
+  }
+}

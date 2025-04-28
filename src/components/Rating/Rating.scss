@@ -1,0 +1,12 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 8px;
+  .starIcons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: gold;
+  }
+}

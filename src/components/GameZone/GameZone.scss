@@ -1,0 +1,85 @@
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gameZone {
+  padding: 40px 0px;
+  width: 100%;
+  background-color: #22275e;
+  background-image: url(../../assets/img/GameZone.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  backdrop-filter: blur(30px);
+
+  h1 {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    color: white;
+    padding-left: 128px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    text-align: end;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2%;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+      color: crimson;
+    }
+  }
+
+  h2.title {
+    color: white;
+    margin-top: 30px;
+  }
+  .categoryGamer {
+    img {
+      width: 199px;
+      height: 199px;
+      border-radius: 50%;
+      padding: 30px;
+      text-align: center;
+      background-color: white;
+    }
+
+    h3 {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: white;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .gameZone {
+    h1 {
+      padding: 0px;
+      text-align: center;
+    }
+
+    .categoryGamer {
+      text-align: center;
+      img {
+        width: 120px;
+        height: 120px;
+        padding: 20px;
+      }
+    }
+  }
+}

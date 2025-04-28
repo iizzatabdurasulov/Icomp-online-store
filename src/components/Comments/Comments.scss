@@ -1,0 +1,74 @@
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.comments {
+  margin-top: 24px;
+  position: relative;
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    left: auto;
+    z-index: 111;
+  }
+
+  .slick-prev {
+    right: 60px;
+    top: -10px;
+    left: auto;
+    transform: none;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #01579b;
+  }
+
+  a {
+    display: block;
+    text-align: end;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #01579b;
+    text-decoration: none;
+    margin-top: 27px;
+  }
+
+  .sliderInsta {
+    display: none;
+
+    .slick-prev:before,
+    .slick-next:before {
+      display: none;
+    }
+  }
+
+  .instagram {
+    box-shadow: 0px 2px 10px 0px #32324724;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .comments {
+    .sliderInsta {
+      display: block;
+    }
+
+    .instagram {
+      display: none;
+    }
+  }
+}

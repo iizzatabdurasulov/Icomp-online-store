@@ -1,0 +1,99 @@
+.productItem {
+  box-shadow: 0px 2px 10px 0px #32324724;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: white;
+  margin-bottom: 70px;
+
+  img {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .topIcons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+
+    button {
+      border: none;
+      background-color: transparent;
+      color: #01579b;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  h5.productTitle {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+    padding: 12px 0px;
+  }
+
+  p.productGrade {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: #999;
+    padding-bottom: 12px;
+  }
+
+  .buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p.productPrice {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      color: black;
+      margin-top: 8px;
+
+      span.oldPrice {
+        display: block;
+        margin-bottom: 5px;
+        font-family: Lato;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 10px;
+        text-decoration: line-through;
+        color: #333;
+      }
+
+      span {
+        font-family: Lato;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #060f42;
+      }
+    }
+
+    button.buyBtn {
+      margin: 0;
+      border-radius: 4px;
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 12px;
+      text-align: center;
+      cursor: pointer;
+      color: white;
+      padding: 12px 15px;
+      background-color: #06a56c;
+      border: 1px solid #06a56c;
+    }
+
+   
+  }
+}

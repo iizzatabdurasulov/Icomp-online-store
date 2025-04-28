@@ -1,0 +1,332 @@
+nav {
+  width: 100%;
+  position: relative;
+
+  
+
+  .modalRegister {
+    position: fixed;
+    top: -200%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    transition: 2s;
+    z-index: 111;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modalBody {
+      width: 350px;
+      height: 400px;
+      margin: auto;
+      text-align: center;
+      border-radius: 4px;
+      padding: 0px 24px;
+      padding-top: 24px;
+      background-color: white;
+      position: relative;
+
+      button.closeModal {
+        position: absolute;
+        top: 0px;
+        right: 24px;
+        border: none;
+        background-color: transparent;
+        font-size: 25px;
+        color: black;
+      }
+
+      h3 {
+        font-family: Lato;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #060f42;
+        text-align: start;
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        input {
+          border: 1px solid #cccccc;
+          padding: 13px 8px;
+          border-radius: 4px;
+          background-color: white;
+          font-family: Lato;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          color: #999;
+          width: 100%;
+          margin: 12px 0px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        a {
+          display: block;
+          text-align: end;
+          font-family: Lato;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 12px;
+          letter-spacing: 0%;
+          color: #01579b;
+        }
+
+        button {
+          font-family: Lato;
+          font-weight: 700;
+          font-size: 10px;
+          line-height: 10px;
+          letter-spacing: 3%;
+          border: none;
+          border-radius: 4px;
+          background-color: #01579b;
+          color: white;
+          text-align: center;
+          padding: 13px 0px;
+          margin-top: 12px;
+          margin-bottom: 24px;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+
+      .googleFacebook {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+
+        button {
+          font-family: Lato;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 12px;
+          padding: 12px 28px;
+          text-align: center;
+          border: none;
+          border-radius: 4px;
+          background-color: #ea4335;
+          color: white;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.9;
+          }
+          &:last-of-type {
+            background-color: #01579b;
+          }
+        }
+      }
+
+      h4 {
+        font-family: Lato;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #333333;
+        text-align: center;
+        a {
+          text-decoration: underline;
+          color: #01579b;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .navTop {
+    padding: 8px 0;
+    background-color: #060f42;
+
+    .left-side {
+      ul {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        gap: 24px;
+
+        li {
+          &:first-of-type {
+            font-size: 24px;
+            margin-right: 24px;
+          }
+          font-family: Lato;
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 12px;
+          letter-spacing: 0%;
+          color: #f4f8fb;
+
+          &:hover {
+            color: crimson;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .right-side {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      button.lang {
+        border: none;
+        background-color: transparent;
+        font-family: Lato;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #f4f8fb;
+        margin-top: 5px;
+        &:hover {
+          color: crimson;
+          cursor: pointer;
+        }
+
+        span {
+          margin-left: 5px;
+          color: #c5c7c9;
+          &:hover {
+            color: crimson;
+            cursor: pointer;
+          }
+        }
+      }
+
+      button.user {
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        &:hover {
+          color: crimson;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .navBottom {
+    padding: 24px 0px;
+    box-shadow: 0px 4px 4px 0px #0000000f;
+
+    form {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 13px 12px;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: black;
+        &::placeholder {
+          color: #e6e6e6;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border: none;
+        border-radius: 4px;
+        background-color: #01579b;
+        padding: 10px 12px;
+        text-align: center;
+        color: white;
+      }
+    }
+
+    .right-side {
+      display: inline-flex;
+      gap: 28px;
+      align-items: center;
+
+      p {
+        font-family: Lato;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #060f42;
+        padding: 0;
+        margin: 0;
+        border-right: 2px solid #060f42;
+        padding-right: 24px;
+
+        .down {
+          color: #060f42;
+          font-size: 24px;
+          margin-bottom: 3px;
+          margin-left: 10px;
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin: 0;
+          padding: 0;
+          color: #060f42;
+          font-size: 20px;
+          text-decoration: none;
+          position: relative;
+
+          span {
+            position: absolute;
+            top: -15px;
+            right: 50%;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            background-color: green !important;
+            padding: 10px;
+            color: white;
+            &:nth-of-type {
+              background-color: red;
+            }
+            &:last-of-type {
+              background-color: greenyellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  nav {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.category {
+  .categoryItem {
+    text-align: center;
+    margin-top: 24px;
+
+    img {
+      width: 172px;
+      height: 172px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 35px;
+      box-shadow: 0px 2px 10px 0px #32324724;
+    }
+
+    h3 {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #333;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+}

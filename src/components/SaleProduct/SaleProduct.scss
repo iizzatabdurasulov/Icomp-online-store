@@ -1,0 +1,18 @@
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.saleProduct {
+  margin-top: 35px;
+
+  
+}
+
+
+@media(max-width: 1199px) {
+  .saleProduct {
+    text-align: center;
+  }
+}
